@@ -1,11 +1,9 @@
-# Memory Decay 
+# memory-decay 
 
 # Background
-In many applications it seems like a useful capability to have some specific datafield of an object being automatically deleted over time.
+In many applications it seems like a useful capability to have datafields of an object automatically deleted after some time.
 
-For example authentication codes, which are valid for a limited time.
-
-Also it seems in a generalized form this might be useful on other cases as well.
+For example authentication codes, which are valid for a limited time and many more.
 
 
 # Usage
@@ -34,7 +32,7 @@ Current Functionality
 
 ```coffee
 setDefaultDecayMS = (decayTimeMS) ->
-makeForgetableMemory  = (object, decayTimeMS) -> object
+makeForgetable  = (object, decayTimeMS) -> object
 # here decayTimeMS is optional - defaultDecayMS will be take if decayTimeMS is not specified
 # the same object as provided is returned
 # the object now has a new function attached
@@ -44,10 +42,10 @@ object.letForget = (key, decayTimeMSs) ->
 ```
 
 ```coffee
-import { makeForgetableMemory } from "memory-decay"
+import { makeForgetable } from "memory-decay"
 
 ## default default is 30000ms
-volatileIdeaMemory = makeForgetableMemory({})
+volatileIdeaMemory = makeForgetable({})
 
 volatileIdeaMemory.task1 = "think about task 2"
 volatileIdeaMemory.letForget("task1") ## is forgotten in 30000ms
@@ -57,7 +55,7 @@ volatileIdeaMemory.letForget("task1", 1000) ## is forgotten in 1000ms
 
 
 longtermMemory = {}
-makeForgetableMemory(longtermMemory, 30000000000)
+makeForgetable(longtermMemory, 30000000000)
 longtermMemory.secret = "super secret secret"
 longtermMemory.letForget("secret") ## is forgotten in 347 days
 

@@ -1,22 +1,22 @@
 {
-  "name": "memory-decay",
-  "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "Lenard Frommelt lenard@frommelt.dev",
-  "license": "Unlicense",
-  "repository": {
-    "type": "git",
-    "url": "git+https://.git"
-  },
-  "bugs": {
-    "url": "https://"
-  },
-  "homepage": "https://",
-  "dependencies": {},
-  "type": "module"
+    "name": "memory-decay",
+    "version": "0.0.2",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "Lenard Frommelt lenard@frommelt.dev",
+    "license": "Unlicense",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/JhonnyJason/memory-decay-output.git"
+    },
+    "bugs": {
+        "url": "https://github.com/JhonnyJason/memory-decay/issues"
+    },
+    "homepage": "https://github.com/JhonnyJason/memory-decay-output#README",
+    "dependencies": {},
+    "type": "module"
 }

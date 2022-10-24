@@ -11,7 +11,7 @@ export setDefaultDecayMS = (decayMS) ->
     return
 
 ############################################################
-export makeForgetableMemory = (obj, decayMS) ->
+export makeForgetable = (obj, decayMS) ->
     if !decayMS? then decayMS = defaultDecayMS
 
     Object.defineProperties(
