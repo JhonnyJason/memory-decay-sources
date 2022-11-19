@@ -3,8 +3,9 @@
 # Background
 In many applications it seems like a useful capability to have datafields of an object automatically deleted after some time.
 
-For example authentication codes, which are valid for a limited time and many more.
+E.g. authentication codes, which are valid for a limited time.
 
+With this package you initialize the Object first, then whenever you want to have automatic deletion, call the `obj.letForget("key")` function.
 
 # Usage
 Requirements
@@ -15,12 +16,12 @@ Installation
 ------------
 Current git version:
 ```
-npm install -g git+https://github.com/JhonnyJason/memory-decay-output.git
+npm install git+https://github.com/JhonnyJason/memory-decay-output.git
 ```
 
 Npm Registry:
 ```
-npm install -g memory-decay
+npm install memory-decay
 ```
 
 Current Functionality
